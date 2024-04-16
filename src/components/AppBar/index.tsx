@@ -1,38 +1,70 @@
-import { Grid, TextField, Toolbar } from "@mui/material";
+import { Tab, Tabs } from "@mui/material";
 import {
   Search,
   SearchIconWrapper,
   StyledAppBar,
   StyledAppBarGridContainer,
-  StyledAppbarGridMainItemsContainer,
-  StyledAppbarGridSubItemsContainer,
+  StyledAvatar,
+  StyledCenterGridColumn,
+  StyledFab,
+  StyledLeftGridColumn,
   StyledLogo,
+  StyledRightGridColumn,
+  StyledTabs,
+  StyledTextField,
 } from "./Appbar.style";
 import logoFB from "../../assets/logo_fb.png";
+import avt from "../../assets/avt.jpg";
 import SearchIcon from "@mui/icons-material/Search";
+import AppsIcon from "@mui/icons-material/Apps";
+import MapsUgcIcon from "@mui/icons-material/MapsUgc";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import HomeIcon from "@mui/icons-material/Home";
+import PeopleIcon from "@mui/icons-material/People";
+import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
+import StoreIcon from "@mui/icons-material/Store";
+import VideogameAssetIcon from "@mui/icons-material/VideogameAsset";
+import { useState } from "react";
 
 export default function AppBar() {
+  const [tabValue, setTabValue] = useState(0);
+  const handleChangeTab = (e: React.SyntheticEvent, newValue: number) => {
+    setTabValue(newValue);
+  };
+
   return (
     <StyledAppBar>
       <StyledAppBarGridContainer container xs={12}>
-        <StyledAppbarGridSubItemsContainer item md={3}>
+        <StyledLeftGridColumn item md={3}>
           <StyledLogo src={logoFB} />
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
-              <TextField placeholder="Tìm kiếm trên Facebook"></TextField>
             </SearchIconWrapper>
+            <StyledTextField placeholder="Tìm kiếm trên Facebook"></StyledTextField>
           </Search>
-        </StyledAppbarGridSubItemsContainer>
-        <StyledAppbarGridMainItemsContainer
-          item
-          xs={12}
-          md={6}
-        ></StyledAppbarGridMainItemsContainer>
-        <StyledAppbarGridSubItemsContainer
-          item
-          md={3}
-        ></StyledAppbarGridSubItemsContainer>
+        </StyledLeftGridColumn>
+        <StyledCenterGridColumn item xs={12} md={6}>
+          <StyledTabs value={tabValue} onChange={handleChangeTab}>
+            <Tab label={<HomeIcon fontSize="large" />}></Tab>
+            <Tab label={<PeopleIcon fontSize="large" />}></Tab>
+            <Tab label={<OndemandVideoIcon fontSize="large" />}></Tab>
+            <Tab label={<StoreIcon fontSize="large" />}></Tab>
+            <Tab label={<VideogameAssetIcon fontSize="large" />}></Tab>
+          </StyledTabs>
+        </StyledCenterGridColumn>
+        <StyledRightGridColumn item md={3}>
+          <StyledAvatar alt="avatar" src={avt} />
+          <StyledFab>
+            <NotificationsIcon fontSize="large" />
+          </StyledFab>
+          <StyledFab>
+            <MapsUgcIcon fontSize="large" />
+          </StyledFab>
+          <StyledFab>
+            <AppsIcon fontSize="large" />
+          </StyledFab>
+        </StyledRightGridColumn>
       </StyledAppBarGridContainer>
     </StyledAppBar>
   );
