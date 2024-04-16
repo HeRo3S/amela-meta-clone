@@ -34,7 +34,7 @@ export default function AppBar() {
 
   return (
     <StyledAppBar>
-      <StyledAppBarGridContainer container xs={12}>
+      <StyledAppBarGridContainer container columns={12}>
         <StyledLeftGridColumn item md={3}>
           <StyledLogo src={logoFB} />
           <Search>

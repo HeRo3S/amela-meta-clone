@@ -94,7 +94,10 @@ export const StyledRightGridColumn = styled(Grid)(({ theme }) => ({
   },
 }));
 export const StyledFab = styled(Fab)({
+  backgroundColor: "#3a3b3c",
+  color: "#ffffff",
   marginRight: "10px",
+
   "& :hover": {
     backgroundColor: "#3a3b3c",
   },
