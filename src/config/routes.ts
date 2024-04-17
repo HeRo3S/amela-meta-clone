@@ -1,10 +1,10 @@
-import Home from "../pages/Home";
+import Facebook from "../pages/Facebook";
 
 interface RouteProperty {
   path: string;
   component: () => JSX.Element;
 }
 
-const routes: RouteProperty[] = [{ path: `/`, component: Home }];
+const routes: RouteProperty[] = [{ path: `/facebook`, component: Facebook }];
 
 export default routes;
