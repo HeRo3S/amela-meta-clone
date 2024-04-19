@@ -1,10 +1,17 @@
 import {
   Avatar,
+  Box,
   Button,
   ListItemIcon,
   ListSubheader,
   styled,
 } from "@mui/material";
+
+export const RightBarContainer = styled(Box)({
+  position: "fixed",
+  height: "100%",
+  maxWidth: "25vw",
+});
 
 export const StyledListSubheader = styled(ListSubheader)(({ theme }) => ({
   display: "flex",

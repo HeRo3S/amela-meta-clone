@@ -8,7 +8,9 @@ import {
   StyledImage,
   TitleContainer,
   TitleIconContainer,
+  CommentsContainer,
 } from "./Post.style";
+import Comment from "../Comment";
 import { Avatar, Box, Grid, Tab, Tabs, Typography } from "@mui/material";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import CloseIcon from "@mui/icons-material/Close";
@@ -36,10 +38,10 @@ function Post() {
         <Avatar src={avt} />
         <Grid container>
           <Grid item xs={12}>
-            <Typography variant="h6">Groupname</Typography>
+            <Typography variant="h6">AOV News</Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography variant="subtitle1">Author name</Typography>
+            <Typography variant="subtitle1">HeRo3S</Typography>
           </Grid>
         </Grid>
         <TitleIconContainer>
@@ -84,6 +86,11 @@ function Post() {
           label="Gửi"
         ></ActionTab>
       </ActionTabs>
+
+      <CommentsContainer>
+        <Typography variant="subtitle1">Xem thêm bình luận</Typography>
+        {Array(3).fill(<Comment />)}
+      </CommentsContainer>
     </MainContainer>
   );
 }

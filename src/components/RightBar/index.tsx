@@ -12,6 +12,7 @@ import {
 import avt from "../../assets/avt.jpg";
 import ExpandCircleDownIcon from "@mui/icons-material/ExpandCircleDown";
 import {
+  RightBarContainer,
   StyledAvatar,
   StyledButton,
   StyledDeleteButton,
@@ -21,7 +22,7 @@ import {
 
 function RightBar() {
   return (
-    <>
+    <RightBarContainer>
       <List
         subheader={
           <StyledListSubheader>
@@ -97,7 +98,7 @@ function RightBar() {
           </ListItemText>
         </ListItem>
       </List>
-    </>
+    </RightBarContainer>
   );
 }
 

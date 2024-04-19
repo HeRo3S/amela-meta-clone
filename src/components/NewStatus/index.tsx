@@ -1,6 +1,7 @@
 import { Avatar, Grid, Tab, Tabs, Typography } from "@mui/material";
 import {
   MainContainer,
+  StyledAvatar,
   StyledGridItemFlex,
   StyledTab,
   StyledTabs,
@@ -15,7 +16,7 @@ export default function NewStatus() {
   return (
     <MainContainer container columns={12}>
       <StyledGridItemFlex item xs={12}>
-        <Avatar src={avt}></Avatar>
+        <StyledAvatar src={avt}></StyledAvatar>
         <StyledTextField placeholder="HeRo3S ơi, bạn làm gì thế?"></StyledTextField>
       </StyledGridItemFlex>
       <Grid item xs={12}>

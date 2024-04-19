@@ -15,11 +15,15 @@ import AvtBookmark from "../../assets/icons/bookmark.png";
 import AvtMemories from "../../assets/icons/memories.png";
 import AvtGroups from "../../assets/icons/groups.png";
 import ExpandCircleDownIcon from "@mui/icons-material/ExpandCircleDown";
-import { StyledListItemIcon, StyledListSubheader } from "./LeftBar.style";
+import {
+  LeftBarContainer,
+  StyledListItemIcon,
+  StyledListSubheader,
+} from "./LeftBar.style";
 
 function LeftBar() {
   return (
-    <>
+    <LeftBarContainer>
       <List>
         <ListItem>
           <ListItemAvatar>
@@ -107,7 +111,7 @@ function LeftBar() {
           </ListItemText>
         </ListItem>
       </List>
-    </>
+    </LeftBarContainer>
   );
 }
 

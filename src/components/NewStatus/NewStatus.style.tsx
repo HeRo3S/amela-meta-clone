@@ -1,4 +1,4 @@
-import { Grid, Tab, Tabs, TextField, styled } from "@mui/material";
+import { Avatar, Grid, Tab, Tabs, TextField, styled } from "@mui/material";
 
 export const MainContainer = styled(Grid)({
   maxWidth: "100%",
@@ -14,6 +14,11 @@ export const StyledGridItemFlex = styled(Grid)({
   alignContent: "center",
   paddingBottom: "1em",
   borderBottom: "solid 1px",
+});
+
+export const StyledAvatar = styled(Avatar)({
+  width: "3rem",
+  height: "3rem",
 });
 
 export const StyledTextField = styled(TextField)(({ theme }) => ({

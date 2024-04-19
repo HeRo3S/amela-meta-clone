@@ -1,4 +1,10 @@
-import { ListItemIcon, ListSubheader, styled } from "@mui/material";
+import { Box, ListItemIcon, ListSubheader, styled } from "@mui/material";
+
+export const LeftBarContainer = styled(Box)({
+  position: "fixed",
+  height: "100%",
+  maxWidth: "25vw",
+});
 
 export const StyledListSubheader = styled(ListSubheader)(({ theme }) => ({
   backgroundColor: "inherit",
@@ -10,4 +16,3 @@ export const StyledListSubheader = styled(ListSubheader)(({ theme }) => ({
 export const StyledListItemIcon = styled(ListItemIcon)({
   color: "#b0b3b8",
 });
-

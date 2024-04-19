@@ -76,3 +76,26 @@ export const ActionTab = styled(Tab)({
   fontWeight: "600",
   flexGrow: "1",
 });
+
+export const CommentsContainer = styled(Box)({
+  display: "flex",
+  flexDirection: "column",
+});
+
+// export const Comment = styled(Box)({
+//   display: "flex",
+//   flexDirection: "column",
+//   marginLeft: "20px",
+//   "& > .text-container": {
+//     padding: "5px 15px",
+//     backgroundColor: "#3a3b3c",
+//     borderRadius: "20px",
+//   },
+//   "& > .action-container": {
+//     display: "flex",
+//     alignItems: "center",
+//     "& > *": {
+//       marginRight: "15px",
+//     },
+//   },
+// });
