@@ -1,5 +1,4 @@
 import { Grid } from "@mui/material";
-import AppBar from "../../components/Facebook/AppBar";
 import {
   AppBarContainer,
   MainContainer,
@@ -7,6 +6,7 @@ import {
   MainRightBar,
   PageContainer,
 } from "./Facebook.style";
+import AppBar from "../../components/Facebook/AppBar";
 import LeftBar from "../../components/Facebook/LeftBar";
 import RightBar from "../../components/Facebook/RightBar";
 import CenterBar from "../../components/Facebook/CenterBar";
