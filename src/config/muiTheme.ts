@@ -39,7 +39,7 @@ export const InstaTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#000000",
+      main: "#111111",
     },
     text: {
       // primary: "rgba(0, 0, 0, 0.87)",
@@ -55,17 +55,19 @@ export const InstaTheme = createTheme({
     h6: {
       fontWeight: 600,
       fontSize: "1rem",
-      color: "#000000",
+      color: "#111",
     },
-    body1: {},
+    body1: {
+      color: "#111111",
+    },
     subtitle1: {
       fontWeight: "600",
-      color: "#b0b3b8",
+      color: "#111111",
     },
     subtitle2: {
-      color: "#b0b3b8",
-      fontSize: "1rem",
-      lineHeight: "1.75",
+      color: "#a3a3a3",
+      // lineHeight: "1.75",
+      // fontSize: "1rem",
     },
   },
 });

@@ -1,21 +1,18 @@
 import { Navigation, Scrollbar } from "swiper/modules";
-import { StyledSwiper, StyledSwiperSlide } from "./Stories.style";
-import StoryCard, { CreateStoryCard } from "../StoryCard/";
+import { StyledSwiper, StyledSwiperSlide } from "./index.style";
+import StorySlide from "./StorySlide";
 
 function Stories() {
   return (
     <StyledSwiper
       navigation={true}
       modules={[Navigation, Scrollbar]}
-      slidesPerView={4}
+      slidesPerView={6}
       spaceBetween={10}
     >
-      <StyledSwiperSlide>
-        <CreateStoryCard />
-      </StyledSwiperSlide>
-      {Array(7).fill(
+      {Array(15).fill(
         <StyledSwiperSlide>
-          <StoryCard />
+          <StorySlide />
         </StyledSwiperSlide>,
       )}
     </StyledSwiper>

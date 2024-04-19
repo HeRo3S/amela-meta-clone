@@ -1,22 +1,25 @@
 import {
-  ActionTab,
-  ActionTabs,
   CommentsStats,
   EmotionStats,
   MainContainer,
   StatsContainer,
   StyledImage,
   TitleContainer,
+  TitleTextContainer,
   TitleIconContainer,
   CommentsContainer,
-} from "./Post.style";
+  ActionIconsContainer,
+  ActionIconsLeftBar,
+  StatusContent,
+  BlueVerifiedIcon,
+} from "./index.style";
 import Comment from "../Comment";
 import { Avatar, Box, Grid, Typography } from "@mui/material";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import CloseIcon from "@mui/icons-material/Close";
-import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
+import BookmarkBorderOutlinedIcon from "@mui/icons-material/BookmarkBorderOutlined";
 import avt from "../../../assets/facebook/avt.jpg";
 import likeEmotes from "../../../assets/facebook/emotes/like.png";
 import heartEmotes from "../../../assets/facebook/emotes/heart.png";
@@ -36,17 +39,13 @@ function Post() {
     <MainContainer>
       <TitleContainer>
         <Avatar src={avt} />
-        <Grid container>
-          <Grid item xs={12}>
-            <Typography variant="h6">AOV News</Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography variant="subtitle1">HeRo3S</Typography>
-          </Grid>
-        </Grid>
+        <TitleTextContainer>
+          <Typography variant="h6">
+            HeRo3S <BlueVerifiedIcon fontSize="small" />
+          </Typography>
+        </TitleTextContainer>
         <TitleIconContainer>
           <MoreHorizIcon fontSize="large" />
-          <CloseIcon fontSize="large" />
         </TitleIconContainer>
       </TitleContainer>
 
@@ -58,37 +57,31 @@ function Post() {
 
       <StyledImage src="https://kenh14cdn.com/203336854389633024/2024/4/16/photo-1-17132359174921268380888.jpg" />
 
-      <StatsContainer container>
-        <EmotionStats item xs>
-          <img src={likeEmotes} />
-          <img src={heartEmotes} />
-          <Typography variant="subtitle2">115</Typography>
-        </EmotionStats>
+      <ActionIconsContainer>
+        <ActionIconsLeftBar>
+          <FavoriteBorderOutlinedIcon />
+          <ChatBubbleOutlineIcon />
+          <SendOutlinedIcon />
+        </ActionIconsLeftBar>
+        <Box>
+          <BookmarkBorderOutlinedIcon />
+        </Box>
+      </ActionIconsContainer>
+
+      <StatsContainer>
+        <StatusContent>
+          <Typography variant="h6">
+            HeRo3S <BlueVerifiedIcon fontSize="small" />
+          </Typography>
+          <Typography variant="body1">Converse</Typography>
+        </StatusContent>
         <CommentsStats item xs>
-          <Typography variant="subtitle2">28 bình luận</Typography>
+          <Typography variant="body1">1,010,399 likes</Typography>
         </CommentsStats>
       </StatsContainer>
 
-      <ActionTabs>
-        <ActionTab
-          icon={<ThumbUpOutlinedIcon />}
-          iconPosition="start"
-          label="Thích"
-        ></ActionTab>
-        <ActionTab
-          icon={<ChatBubbleOutlineIcon />}
-          iconPosition="start"
-          label="Bình luận"
-        ></ActionTab>
-        <ActionTab
-          icon={<SendOutlinedIcon />}
-          iconPosition="start"
-          label="Gửi"
-        ></ActionTab>
-      </ActionTabs>
-
       <CommentsContainer>
-        <Typography variant="subtitle1">Xem thêm bình luận</Typography>
+        <Typography variant="body1">View all 8.111 comments</Typography>
         {Array(3).fill(<Comment />)}
       </CommentsContainer>
     </MainContainer>

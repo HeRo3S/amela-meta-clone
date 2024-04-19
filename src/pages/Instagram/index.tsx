@@ -1,9 +1,5 @@
 import { Grid } from "@mui/material";
-import {
-  MainLeftBar,
-  MainRightBar,
-  PageContainer,
-} from "./Instagram.style";
+import { MainLeftBar, MainRightBar, PageContainer } from "./index.style";
 import RightBar from "../../components/Instagram/RightBar";
 import CenterBar from "../../components/Instagram/CenterBar";
 import LeftBar from "../../components/Instagram/LeftBar";
