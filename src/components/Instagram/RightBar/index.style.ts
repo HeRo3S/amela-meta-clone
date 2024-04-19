@@ -11,6 +11,7 @@ export const RightBarContainer = styled(Box)({
   position: "fixed",
   height: "100%",
   maxWidth: "25vw",
+  paddingTop: "1rem",
 });
 
 export const StyledListSubheader = styled(ListSubheader)(({ theme }) => ({
@@ -47,6 +48,7 @@ export const StyledListItemIcon = styled(ListItemIcon)({
 
 export const StyledButton = styled(Button)({
   width: "100%",
+  color: "#0f9bf7",
   fontWeight: "600",
 });
 

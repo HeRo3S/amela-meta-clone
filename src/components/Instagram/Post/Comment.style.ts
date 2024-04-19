@@ -1,4 +1,4 @@
-import { Box, styled } from "@mui/material";
+import { Box, Typography, styled } from "@mui/material";
 
 export const CommentContainer = styled(Box)({
   display: "flex",
@@ -7,11 +7,11 @@ export const CommentContainer = styled(Box)({
 
 export const MainContent = styled(Box)({
   display: "flex",
-  flexDirection: "column",
-  marginLeft: "20px",
+  width: "100%",
   "& > .text-container": {
-    padding: "5px 15px",
-    backgroundColor: "#3a3b3c",
+    flexGrow: "1",
+    display: "flex",
+    backgroundColor: "#fff",
     borderRadius: "20px",
   },
   "& > .action-container": {
@@ -21,4 +21,12 @@ export const MainContent = styled(Box)({
       marginRight: "15px",
     },
   },
+});
+
+export const Username = styled(Typography)({
+  fontWeight: "600",
+  marginRight: "0.75rem",
+});
+export const CommentText = styled(Typography)({
+  fontWeight: "500",
 });

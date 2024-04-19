@@ -23,9 +23,13 @@ export const FbTheme = createTheme({
       fontSize: "1rem",
     },
     body1: {},
+    body2: {
+      color: "#737373",
+      fontWeight: "500",
+    },
     subtitle1: {
       fontWeight: "600",
-      color: "#b0b3b8",
+      color: "#a3a3a3",
     },
     subtitle2: {
       color: "#b0b3b8",

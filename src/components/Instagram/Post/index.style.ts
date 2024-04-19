@@ -6,7 +6,7 @@ export const MainContainer = styled(Box)({
   display: "flex",
   flexDirection: "column",
   // maxWidth: "600px",
-  width: "60%",
+  width: "70%",
   minWidth: "400px",
   margin: "1em 0",
   borderRadius: "10px",
@@ -89,14 +89,20 @@ export const StatusContent = styled(Box)({
 });
 export const CommentsStats = styled(Grid)({
   display: "flex",
+  "& > .MuiTypography-root": {
+    fontWeight: "600",
+    marginBottom: "0.5rem",
+  },
 });
 
 export const CommentsContainer = styled(Box)({
   display: "flex",
   flexDirection: "column",
+  "& > .MuiTypography-root": {
+    color: "#939393",
+  },
 });
 
 export const BlueVerifiedIcon = styled(VerifiedIcon)({
   color: "#0095f6",
 });
-

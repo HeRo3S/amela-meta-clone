@@ -6,7 +6,7 @@ export default function CenterBar() {
   return (
     <StyledMainContainer>
       <Stories></Stories>
-      <Post></Post>
+      {Array(6).fill(<Post></Post>)}
     </StyledMainContainer>
   );
 }
