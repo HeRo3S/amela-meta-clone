@@ -17,13 +17,13 @@ import CloseIcon from "@mui/icons-material/Close";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
-import avt from "../../assets/avt.jpg";
-import likeEmotes from "../../assets/emotes/like.png";
-import heartEmotes from "../../assets/emotes/heart.png";
-import hahaEmotes from "../../assets/emotes/haha.png";
-import luvEmotes from "../../assets/emotes/luv.png";
-import angryEmotes from "../../assets/emotes/angry.png";
-import sadgeEmotes from "../../assets/emotes/sadge.png";
+import avt from "../../../assets/avt.jpg";
+import likeEmotes from "../../../assets/emotes/like.png";
+import heartEmotes from "../../../assets/emotes/heart.png";
+import hahaEmotes from "../../../assets/emotes/haha.png";
+import luvEmotes from "../../../assets/emotes/luv.png";
+import angryEmotes from "../../../assets/emotes/angry.png";
+import sadgeEmotes from "../../../assets/emotes/sadge.png";
 
 interface IProps {
   title: string;

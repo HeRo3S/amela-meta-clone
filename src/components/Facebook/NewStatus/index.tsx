@@ -1,4 +1,4 @@
-import { Avatar, Grid, Tab, Tabs, Typography } from "@mui/material";
+import { Avatar, Grid } from "@mui/material";
 import {
   MainContainer,
   StyledAvatar,
@@ -7,10 +7,10 @@ import {
   StyledTabs,
   StyledTextField,
 } from "./NewStatus.style";
-import avt from "../../assets/avt.jpg";
-import iconLive from "../../assets/icons/livestream.png";
-import iconAlbum from "../../assets/icons/album.png";
-import iconEmotes from "../../assets/icons/emotes.png";
+import avt from "../../../assets/avt.jpg";
+import iconLive from "../../../assets/icons/livestream.png";
+import iconAlbum from "../../../assets/icons/album.png";
+import iconEmotes from "../../../assets/icons/emotes.png";
 
 export default function NewStatus() {
   return (

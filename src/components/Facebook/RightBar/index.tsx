@@ -9,7 +9,7 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import avt from "../../assets/avt.jpg";
+import avt from "../../../assets/avt.jpg";
 import ExpandCircleDownIcon from "@mui/icons-material/ExpandCircleDown";
 import {
   RightBarContainer,

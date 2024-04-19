@@ -1,5 +1,5 @@
 import { CommentContainer, MainContent } from "./Comment.style";
-import avt from "../../assets/avt.jpg";
+import avt from "../../../assets/avt.jpg";
 import { Avatar, Box, Typography } from "@mui/material";
 
 export default function Comment() {

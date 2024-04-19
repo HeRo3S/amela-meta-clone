@@ -13,8 +13,8 @@ import {
   StyledTabs,
   StyledTextField,
 } from "./Appbar.style";
-import logoFB from "../../assets/logo_fb.png";
-import avt from "../../assets/avt.jpg";
+import logoFB from "../../../assets/logo_fb.png";
+import avt from "../../../assets/avt.jpg";
 import SearchIcon from "@mui/icons-material/Search";
 import AppsIcon from "@mui/icons-material/Apps";
 import MapsUgcIcon from "@mui/icons-material/MapsUgc";

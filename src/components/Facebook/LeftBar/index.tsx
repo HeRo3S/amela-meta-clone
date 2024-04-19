@@ -4,16 +4,14 @@ import {
   List,
   ListItem,
   ListItemAvatar,
-  ListItemIcon,
   ListItemText,
-  ListSubheader,
   Typography,
 } from "@mui/material";
-import avt from "../../assets/avt.jpg";
-import AvtFriends from "../../assets/icons/friends.png";
-import AvtBookmark from "../../assets/icons/bookmark.png";
-import AvtMemories from "../../assets/icons/memories.png";
-import AvtGroups from "../../assets/icons/groups.png";
+import avt from "../../../assets/avt.jpg";
+import AvtFriends from "../../../assets/icons/friends.png";
+import AvtBookmark from "../../../assets/icons/bookmark.png";
+import AvtMemories from "../../../assets/icons/memories.png";
+import AvtGroups from "../../../assets/icons/groups.png";
 import ExpandCircleDownIcon from "@mui/icons-material/ExpandCircleDown";
 import {
   LeftBarContainer,

@@ -8,8 +8,8 @@ import {
 } from "./StoryCard.style";
 import "swiper/css";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
-import imgStories from "../../assets/img_stories.jpg";
-import avt from "../../assets/avt.jpg";
+import imgStories from "../../../assets/img_stories.jpg";
+import avt from "../../../assets/avt.jpg";
 
 export default function StoryCard() {
   return (
